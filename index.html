@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le sserafim - K-pop Girl Group</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333; 
+        }
+
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: black;
+            padding: 1em;
+            text-align: center;
+        }
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #333;
+            border: 2px solid #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .nav-button:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .member img {
+            max-width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .music-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .music-item {
+            width: 45%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease-in-out; /* Added transition effect on music items */
+        }
+        .music-item:hover {
+            transform: scale(1.05); /* Scale up on hover effect */
+        }
+        video {
+            display: flex;
+            margin-top: -25px;
+            width: 100%;
+            height: calc(.5624 * 100vw)
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img src="https://preview.redd.it/msjzzq9nomo91.jpg?auto=webp&s=bf9a6ecce69e65525c7b392f74f1e5af9f921132" alt="Le Sserafim Logo" width="1300" height="350">
+        </h1>
+    </header>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+    <nav>
+        <a href="#home" class="nav-button">Home</a>
+        <a href="#about" class="nav-button">About</a>
+        <a href="#members" class="nav-button">Members</a>
+        <a href="#music" class="nav-button">Music</a>
+        <a href="#contact" class="nav-button">Contact</a>
+    </nav>
+    <video autoplay loop muted src="LE SSERAFIM (르세라핌) 'Perfect Night' OFFICIAL M-V with OVERWATCH 2 (2160p).mp4"></video>
+
+    <section id="home" class="container">
+        <h2>Welcome to Le Sserafim's Official Website!</h2>
+        <p>Discover the latest updates, music, and more from the sensational K-pop girl group.</p>
+    </section>
